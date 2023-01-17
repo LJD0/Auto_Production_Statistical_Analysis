@@ -1,0 +1,33 @@
+library(tidyverse)
+library(dplyr)
+
+# Import csv to dataframe
+mecha_car_file <- read.csv("Resources/MechaCar_mpg.csv", check.names = F, stringsAsFactors = F)
+
+
+lm(mpg ~ AWD + ground_clearance + spoiler_angle + vehicle_weight + vehicle_length, data = mecha_car_file) # generate multiple linear regression model
+
+summary(lm(mpg ~ AWD + ground_clearance + spoiler_angle + vehicle_weight + vehicle_length, data = mecha_car_file))
+
+
+# Import Suspensioin Coil Data
+
+suspension_file <- read_csv("Resources/Suspension_Coil.csv")
+
+suspension_summary <- suspension_file %>%
+    summarize(
+        mean = mean(PSI),
+        median = median(PSI),
+        variance = var(PSI),
+        sd = sd(PSI)
+    )
+
+
+lot_summary <- suspension_file %>%
+    group_by(Manufacturing_Lot) %>%
+    summarize(
+        mean = mean(PSI),
+        median = median(PSI),
+        variance = var(PSI),
+        sd = sd(PSI)
+    )
