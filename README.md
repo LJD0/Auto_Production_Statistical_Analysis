@@ -2,7 +2,7 @@
 
 ### Linear Regression to Predict MPG
 
-image1
+[Linear Regression Output](https://github.com/LJD0/MechaCar_Statistical_Analysis/blob/main/Output/Linear_Regression.png)
 
 1. The variables/coefficients that provided a non-random amount of variance to the mpg values in the dataset are: AWD, ground_clearance, spoiler_angle, vehicle_weight, and vehicle_length. The summary of the model shows that the ground_clearance and vehicle_length variables had the highest impact on mpg values, with a significant p-value of 5.21e-08 and 2.60e-12, respectively. The AWD and spoiler_angle variables had a less significant impact on mpg values, with p-values of 0.1852 and 0.3069, respectively. The vehicle_weight variable had a marginal impact on mpg values, with a p-value of 0.0776. This is concluded from the coefficient table in the summary, where the p-values for all of these variables are less than 0.05, indicating that there is strong evidence to reject the null hypothesis that the coefficients for these variables are zero
 2. The slope of the linear model is not considered to be zero. The coefficients table in the summary shows that all the variable/coefficients have non-zero estimates, which means that they have an effect on the dependent variable mpg, some more than others though.
@@ -10,9 +10,9 @@ image1
 
 ### Summary Statistics on Suspension Coils
 
-Image1
+[Total Summary](https://github.com/LJD0/MechaCar_Statistical_Analysis/blob/main/Output/total_summary.png)
 
-image2
+[Lot Summary](https://github.com/LJD0/MechaCar_Statistical_Analysis/blob/main/Output/Lot_Summary.png)
 
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Based on the provided data, it appears that the current manufacturing data does meet this design specification for all the lots together (with the total variance for the suspension coils is 62.29356); but when we look at each lot individually, the variance of Lot1 and Lot2 are within the design specification of 100 pounds per square inch, but Lot3 is 170 which exceeds the design specification of 100 pounds per square inch. Therefore, the current manufacturing data does not meet the design specification for Lot3.
 
@@ -20,13 +20,13 @@ It's worth mentioning that variances are used as a measure of spread, it's a mea
 
 ### T-Tests on Suspension Coils
 
-image1
+[All Lot t.test](https://github.com/LJD0/MechaCar_Statistical_Analysis/blob/main/Output/All_lot_ttest.png)
 
-image2
+[Lot 1 t.test](https://github.com/LJD0/MechaCar_Statistical_Analysis/blob/main/Output/Lot1_ttest.png)
 
-image3
+[Lot 2 t.test](https://github.com/LJD0/MechaCar_Statistical_Analysis/blob/main/Output/Lot2_ttest.png)
 
-image4
+[Lot 3 t.test](https://github.com/LJD0/MechaCar_Statistical_Analysis/blob/main/Output/Lot3_ttest.png)
 
 The t-test results show that, the PSI across all manufacturing lots is not statistically different from the population mean of 1,500 pounds per square inch.
 
@@ -58,4 +58,4 @@ To run this study using R and the tidyverse library:
 
     t.test(mechacar_data$mpg, other_manufacturer_data$mpg, alternative = "two.sided", var.equal = TRUE)
 
-\*Additional data cleaning may be needed between the import and the t.test
+\*Additional data cleaning may be needed between the import and the t.test*
