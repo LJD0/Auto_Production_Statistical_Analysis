@@ -2,8 +2,8 @@
 
 ### Linear Regression to Predict MPG
 
-<img alt='Linear Regression summary' style='width: 80vw;' src='https://github.com/LJD0/MechaCar_Statistical_Analysis/blob/main/Output/Linear_Regression.png'>
-<img alt='Linear Regression plot' style='width: 80vw;' src='https://github.com/LJD0/MechaCar_Statistical_Analysis/blob/main/Output/Linear_Regression.png'>
+<img alt='Linear Regression summary' style='width: 80vw;' src='Output/Linear_Model_Summary.png'>
+<img alt='Linear Regression plot' style='width: 80vw;' src='Output/linear_model_plot.png'>
 
 1. The variables/coefficients that provided a non-random amount of variance to the mpg values in the dataset are: AWD, ground_clearance, spoiler_angle, vehicle_weight, and vehicle_length. The summary of the model shows that the ground_clearance and vehicle_length variables had the highest impact on mpg values, with a significant p-value of 5.21e-08 and 2.60e-12, respectively. The AWD and spoiler_angle variables had a less significant impact on mpg values, with p-values of 0.1852 and 0.3069, respectively. The vehicle_weight variable had a marginal impact on mpg values, with a p-value of 0.0776. This is concluded from the coefficient table in the summary, where the p-values for all of these variables are less than 0.05, indicating that there is strong evidence to reject the null hypothesis that the coefficients for these variables are zero
 2. The slope of the linear model is not considered to be zero. The coefficients table in the summary shows that all the variable/coefficients have non-zero estimates, which means that they have an effect on the dependent variable mpg, some more than others though.
@@ -60,9 +60,9 @@ It's worth mentioning that variances are used as a measure of spread, it's a mea
 
 ### T-Tests on Suspension Coils
 
-<img alt='All Lot t.test' style='width: 80vw;' src='https://github.com/LJD0/MechaCar_Statistical_Analysis/blob/main/Output/All_lot_ttest.png'>
+<img alt='All Lot t.test' style='width: 80vw;' src='Output/All_Lot_Test.png'>
 
-<img alt='Lot 1 t.test' style='width: 80vw;' src='https://github.com/LJD0/MechaCar_Statistical_Analysis/blob/main/Output/Lot1_ttest.png'>
+<img alt='individual t.tests' style='width: 80vw;' src='Output/individual_lot_tests.png'>
 
 
 The t-test results show that, the PSI across all manufacturing lots is not statistically different from the population mean of 1,500 pounds per square inch.
