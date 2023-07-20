@@ -43,6 +43,19 @@ mecha_car_lm_plot <- mecha_car_lm %>%
 
 mecha_car_lm_plot
 
+# export the plot
+ggsave(
+    "Output/linear_model_plot.png", 
+    plot = mecha_car_lm_plot, 
+    width = 8, 
+    height = 12, 
+    units = "in", 
+    dpi = 300, 
+    bg='white'
+    )
+
+
+
 # Import Suspensioin Coil Data
 suspension_file <- read.csv("Resources/Suspension_Coil.csv")
 
@@ -66,6 +79,7 @@ lot_psi_summary <- suspension_file %>%
 
 print(coil_psi_summary)
 print(lot_psi_summary)
+
 # T-Test on Suspension Coils
 
 # isolate psi data
