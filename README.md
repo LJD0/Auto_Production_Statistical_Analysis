@@ -2,7 +2,8 @@
 
 ### Linear Regression to Predict MPG
 
-<img alt='Linear Regression Output' style='width: 80vw;' src='https://github.com/LJD0/MechaCar_Statistical_Analysis/blob/main/Output/Linear_Regression.png'>
+<img alt='Linear Regression summary' style='width: 80vw;' src='https://github.com/LJD0/MechaCar_Statistical_Analysis/blob/main/Output/Linear_Regression.png'>
+<img alt='Linear Regression plot' style='width: 80vw;' src='https://github.com/LJD0/MechaCar_Statistical_Analysis/blob/main/Output/Linear_Regression.png'>
 
 1. The variables/coefficients that provided a non-random amount of variance to the mpg values in the dataset are: AWD, ground_clearance, spoiler_angle, vehicle_weight, and vehicle_length. The summary of the model shows that the ground_clearance and vehicle_length variables had the highest impact on mpg values, with a significant p-value of 5.21e-08 and 2.60e-12, respectively. The AWD and spoiler_angle variables had a less significant impact on mpg values, with p-values of 0.1852 and 0.3069, respectively. The vehicle_weight variable had a marginal impact on mpg values, with a p-value of 0.0776. This is concluded from the coefficient table in the summary, where the p-values for all of these variables are less than 0.05, indicating that there is strong evidence to reject the null hypothesis that the coefficients for these variables are zero
 2. The slope of the linear model is not considered to be zero. The coefficients table in the summary shows that all the variable/coefficients have non-zero estimates, which means that they have an effect on the dependent variable mpg, some more than others though.
@@ -10,9 +11,48 @@
 
 ### Summary Statistics on Suspension Coils
 
-<img alt='Total Summary' style='width: 80vw;' src='https://github.com/LJD0/MechaCar_Statistical_Analysis/blob/main/Output/total_summary.png'>
+<table>
+  <thead>
+    <tr>
+      <th>Manufacturing Lot</th>
+      <th>mean</th>
+      <th>median</th>
+      <th>variance</th>
+      <th>sd</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>All Lots</td>
+      <td>1498.78</td>
+      <td>1500</td>
+      <td>62.2936</td>
+      <td>7.8926</td>
+    </tr>
+    <tr>
+      <td>Lot1</td>
+      <td>1500</td>
+      <td>1500</td>
+      <td>0.9796</td>
+      <td>0.9897</td>
+    </tr>
+    <tr>
+      <td>Lot2</td>
+      <td>1500.2</td>
+      <td>1500</td>
+      <td>7.4694</td>
+      <td>2.733</td>
+    </tr>
+    <tr>
+      <td>Lot3</td>
+      <td>1496.14</td>
+      <td>1498.5</td>
+      <td>170.2861</td>
+      <td>13.0494</td>
+    </tr>
+  </tbody>
+</table>
 
-<img alt='Lot Summary' style='width: 80vw;' src='https://github.com/LJD0/MechaCar_Statistical_Analysis/blob/main/Output/Lot_Summary.png'>
 
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Based on the provided data, it appears that the current manufacturing data does meet this design specification for all the lots together (with the total variance for the suspension coils is 62.29356); but when we look at each lot individually, the variance of Lot1 and Lot2 are within the design specification of 100 pounds per square inch, but Lot3 is 170 which exceeds the design specification of 100 pounds per square inch. Therefore, the current manufacturing data does not meet the design specification for Lot3.
 
@@ -24,9 +64,6 @@ It's worth mentioning that variances are used as a measure of spread, it's a mea
 
 <img alt='Lot 1 t.test' style='width: 80vw;' src='https://github.com/LJD0/MechaCar_Statistical_Analysis/blob/main/Output/Lot1_ttest.png'>
 
-<img alt='Lot 2 t.test' style='width: 80vw;' src='https://github.com/LJD0/MechaCar_Statistical_Analysis/blob/main/Output/Lot2_ttest.png'>
-
-<img alt='Lot 3 t.test' style='width: 80vw;' src='https://github.com/LJD0/MechaCar_Statistical_Analysis/blob/main/Output/Lot3_ttest.png'>
 
 The t-test results show that, the PSI across all manufacturing lots is not statistically different from the population mean of 1,500 pounds per square inch.
 
