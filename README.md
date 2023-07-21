@@ -2,14 +2,14 @@
 
 ### Linear Regression to Predict MPG
 
-`<img alt='Linear Regression summary' style='width: 80vw;' src='Output/Linear_Model_Summary.png'>`
+<img alt='Linear Regression summary' style='width: 80vw;' src='Output/Linear_Model_Summary.png'>
 
 
 The linear model indicates that the coefficients for the variables are not zero, implying that they indeed have an influence on the  mpg. Some variables exert a more pronounced effect than others.
 
 
 
-`<img alt='Linear Regression plot' style='width: 80vw;' src='Output/linear_model_plot.png'>`
+<img alt='Linear Regression plot' style='width: 80vw;' src='Output/linear_model_plot.png'>
 
 The variables AWD, ground_clearance, spoiler_angle, vehicle_weight, and vehicle_length showed notable contributions to the variations in the mpg values of the observed cars. Specifically, ground_clearance and vehicle_length had the most significant impact, as indicated by their very low p-values (5.21e-08 and 2.60e-12, respectively). AWD and spoiler_angle had less influential effects with higher p-values of 0.1852 and 0.3069, respectively, but as the graph shows did have some effect on fuel effeciency. The vehicle_weight variable had a modest effect on mpg values with a p-value of 0.0776. All of the p-values being less than 0.05 suggest strong evidence to reject the null hypothesis, meaning these variables do have a statistically significant impact on the mpg values.
 
@@ -74,12 +74,12 @@ It is important to consider that the variances are influenced by outliers and ex
 
 ### T-Tests on Suspension Coils
 
-`<img alt='All Lot t.test' style='width: 80vw;' src='Output/All_Lot_Test.png'>`
+<img alt='All Lot t.test' style='width: 80vw;' src='Output/All_Lot_Test.png'>
 
 **All Lots Combined:**
 The t-test shows that the PSI (pounds per square inch) across all manufacturing lots is not statistically different from the population mean of 1,500 pounds per square inch. The p-value is 1, indicating that there is no significant difference.
 
-`<img alt='individual t.tests' style='width: 80vw;' src='Output/individual_lot_tests.png'>`
+<img alt='individual t.tests' style='width: 80vw;' src='Output/individual_lot_tests.png'>
 
 **Lot 1:**
 For Lot 1, the p-value is 1, which is greater than the commonly used threshold of 0.05. This means that there is not enough evidence to suggest that the mean of Lot 1 is different from the population mean of 1,500 pounds per square inch.
