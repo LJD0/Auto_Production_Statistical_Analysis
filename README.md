@@ -9,7 +9,7 @@ The linear model indicates that the coefficients for the variables are not zero,
 
 
 
-<img alt='Linear Regression plot' style='width: 80vw;' src='Output/linear_model_plot.png'>
+<img alt='Linear Regression plot' style='width: 30vw;' src='Output/linear_model_plot.png'>
 
 The variables AWD, ground_clearance, spoiler_angle, vehicle_weight, and vehicle_length showed notable contributions to the variations in the mpg values of the observed cars. Specifically, ground_clearance and vehicle_length had the most significant impact, as indicated by their very low p-values (5.21e-08 and 2.60e-12, respectively). AWD and spoiler_angle had less influential effects with higher p-values of 0.1852 and 0.3069, respectively, but as the graph shows did have some effect on fuel effeciency. The vehicle_weight variable had a modest effect on mpg values with a p-value of 0.0776. All of the p-values being less than 0.05 suggest strong evidence to reject the null hypothesis, meaning these variables do have a statistically significant impact on the mpg values.
 
